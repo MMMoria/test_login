@@ -1,15 +1,15 @@
 /* 订单管理 */
-const Order = () => import('../pages/order-manage')
-const OrderList = () => import('../pages/order-manage/order-list')
-const ProductManage = () => import('../pages/order-manage/product-manage')
-const ProductionList = () => import('../pages/order-manage/product-manage/production-list')
-const ReviewManage = () => import('../pages/order-manage/product-manage/review-manage')
-const ReturnGoods = () => import('../pages/order-manage/return-goods')
+const Order = () => import('../views/order-manage')
+const OrderList = () => import('../views/order-manage/order-list')
+const ProductManage = () => import('../views/order-manage/product-manage')
+const ProductionList = () => import('../views/order-manage/product-manage/production-list')
+const ReviewManage = () => import('../views/order-manage/product-manage/review-manage')
+const ReturnGoods = () => import('../views/order-manage/return-goods')
 
 /* 产品管理 */
-const Goods = () => import('../pages/goods-manage')
-const GoodsList = () => import('../pages/goods-manage/goods-list')
-const GoodsClassify = () => import('../pages/goods-manage/goods-classify')
+const Goods = () => import('../views/goods-manage')
+const GoodsList = () => import('../views/goods-manage/goods-list')
+const GoodsClassify = () => import('../views/goods-manage/goods-classify')
 
 /* 需要权限判断的路由 */
 const dynamicRoutes = [

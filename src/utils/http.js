@@ -1,4 +1,3 @@
-// 在这个里面封装ajax
 import axios from 'axios'
 // import store from '@/store/index.js'
 import baseURL from './baseURL'

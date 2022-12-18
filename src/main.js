@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 import ElementUI from 'element-ui'
+import "./router/permission"
 import 'element-ui/lib/theme-chalk/index.css'
 import 'echarts-liquidfill'
 
@@ -16,3 +17,4 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+Vue.config.devtools = true;

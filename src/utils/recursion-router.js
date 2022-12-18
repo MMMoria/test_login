@@ -26,8 +26,8 @@ export function recursionRouter(userRouter = [], alRouter = []) {
 export function setDefaultRoute(routes) {
   routes.forEach((v, i) => {
     if(v.children && v.children.length > 0) {
-      v.redirect = {name: caches.chilren[0].name}
-      setDefalutRoute(v.children)
+      v.redirect = {name: v.chilren[0].name}
+      setDefaultRoute(v.children)
     }
   })
 }

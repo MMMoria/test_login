@@ -17,17 +17,18 @@ const routes = [
   }
 ]
 /**
+ * 动态加载的路由
  * 根据用户的权限不同，所能看到的页面是不同的，根据不同用户展示不同页面=>动态路由
  * 使用addRouter()
  */
 export const DynamicRoutes = [
   {
     path: "",
-    component: Layout, //加载的根目录
+    component: Layout, //加载的根目录，什么都不显示作为容器页面
     name: 'container', // 名字叫
     redirect: "home", // 重定向
     meta: {
-      requireAuth: true, // 需要登录才能进入
+      requiresAuth: true, // 是否需要登录才能进入，增加该属性
       name: "首页"
     },
     children: [
@@ -36,8 +37,7 @@ export const DynamicRoutes = [
         component: Home,
         name: "home",
         meta: {
-          // 匹配规则
-          name: "首页",
+          name: "首页", // 匹配规则
           icon: "icon-name"
         }
       }
@@ -49,7 +49,7 @@ export const DynamicRoutes = [
     name: "403"
   },
   {
-    path: "/404",
+    path: "*",
     component: Notfound,
     name: "404"
   }

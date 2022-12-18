@@ -73,13 +73,17 @@ export default{
 
     }
   },
+  watch() {
+    console.log('1111',this.$router)
+  },
   methods: {
     async login() {
       let data = await login(this.loginform.account)
       let token = data.token
+      // 本地vuex
       this.$store.commit('LOGIN_IN',token)
-      this.$router.replace('/')
-      console.log(data)
+      this.$router.replace("/")
+      console.log('0000',this.$router)
     }
   }
 }
