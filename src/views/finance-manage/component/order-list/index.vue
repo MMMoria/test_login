@@ -1,21 +1,13 @@
 <template>
     <div>
-
+       订单列表
     </div>
 </template>
 
-<script type="text/javascript">
-export default{
-  data () {
-    return {
-
+<script>
+export default {
+    data() {
+        return {}
     }
-  },
-  components: {
-
-  }
 }
 </script>
-
-<style scoped>
-</style>

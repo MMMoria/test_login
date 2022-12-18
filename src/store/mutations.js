@@ -4,5 +4,5 @@ export default {
   },
   LOGIN_OUT(state) {
     state.UserToken = ""
-}
+  }
 }

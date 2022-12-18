@@ -6,7 +6,7 @@ const adminPermission = require("./data/admin_permission.json")
 const vipPermission = require("./data/vip_permission.json")
 const url = require("url")
 
-app.get("/login",(req, res) => {
+app.get("/login", (req, res) => {
   const user = url.parse(req.url, true).query.user
   if (user === 'admin') {
     res.send(adminLogin)
@@ -14,14 +14,14 @@ app.get("/login",(req, res) => {
     res.send(VipLogin)
   }
 })
-app.get("/permisssion",(req, res) => {
-  const user = url.parse(req.url, true).query.user
+app.get("/permission", (req, res) => {
+  const user = url.parse(req.url, true).query.user;
   if (user === 'admin') {
     res.send(adminPermission)
-  }else{
+  } else {
     res.send(vipPermission)
   }
 })
 app.listen(3300, () => {
-  console.log("服务器运行在3300")
+  console.log('服务器运行在3300')
 })

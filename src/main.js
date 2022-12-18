@@ -3,9 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
-import ElementUI from 'element-ui'
+import './plugins/element.js'
 import "./router/permission"
-import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui'
+// import "./assets/css/index.scss"
 import 'echarts-liquidfill'
 
 Vue.use(ElementUI)
